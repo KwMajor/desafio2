@@ -1,0 +1,15 @@
+.navigation{
+    display: flex;
+    justify-content: end;
+}
+.capa{
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+}
+h4{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
