@@ -5,11 +5,16 @@
 .capa{
     display: flex;
     justify-content: center;
-    padding-left: 30%;
+    padding-left: 25%;
 }
 h4{
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+body{
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
