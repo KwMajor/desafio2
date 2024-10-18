@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNES Universidade</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bodyhome">
+    <header>
+        <a href="home.html">
+            <img src="/img/logo.png" class="logo" alt="Logo da Universidade">
+        </a>
+        <nav class="navigation">
+            <a href="index.html" class="btn custom-btn">Home</a> 
+            <a href="about.html" class="btn custom-btn">Sobre</a> 
+            <a href="contact.html" class="btn custom-btn">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Flexbox container for aligning the toasts -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100" style="position: fixed; top: 20px; z-index: 9999;">
+
+        <!-- Toast -->
+        <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+            <div class="toast-header">
+                <strong class="me-auto">MATRÍCULAS ABERTAS!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Acesse já a página contatos e faça a sua inscrição!!!
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/capa.png" class="d-block w-100" alt="Capa da Universidade">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/studants.jpg" class="d-block w-100" alt="Estudantes">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/unesp-ourinhos-foto-7.jpg" class="d-block w-100" alt="UNESP Ourinhos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="capa">
+        <article>
+            <h1 class="titulo"><b>Sobre a Universidade</b></h1>
+            <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint animi sit sed tempora modi qui quasi ad eius! Odit aspernatur aliquid nulla illo velit delectus necessitatibus! Placeat rem temporibus itaque.</p>
+            <p class="paragrafo2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, repudiandae odio optio quasi voluptatem at quia voluptas animi delectus placeat nulla adipisci vitae nihil rerum, consequuntur rem harum quidem quod?</p>
+        </article>
+    </main>
+
+    <footer>
+        <h4><b>Todos os direitos reservados</b></h4>
+    </footer>
+
+    <script>
+        
+        window.addEventListener('load', function () {
+            var toastEl = document.getElementById('myToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        });
+    </script>
+</body>
+</html>
