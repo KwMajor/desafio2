@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bodyhome">
     <header>
         <a href="home.html">
-            <img src="/img/logo.png" class="logo" alt="Logo da Universidade">
+            <img src="./img/logo.png" class="logo" alt="Logo da Universidade">
         </a>
         <nav class="navigation">
             <a href="index.html" class="btn custom-btn">Home</a> 
@@ -21,10 +22,7 @@
         </nav>
     </header>
 
-    
     <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100" style="position: fixed; top: 20px; z-index: 9999;">
-
-        
         <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
             <div class="toast-header">
                 <strong class="me-auto">MATRÍCULAS ABERTAS!</strong>
@@ -58,24 +56,137 @@
         </button>
     </div>
 
+    <div class="jumbotron text-center mt-4">
+        <h1 class="display-4">Bem-vindo à UNES!</h1>
+        <p class="lead">Transforme seu futuro com uma educação de qualidade.</p>
+        <a class="btn custom-btn btn-lg" href="contact.html" role="button">Inscreva-se agora</a>
+    </div>
+
     <main class="capa">
         <article>
             <h1 class="titulo"><b>Sobre a Universidade</b></h1>
             <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint animi sit sed tempora modi qui quasi ad eius! Odit aspernatur aliquid nulla illo velit delectus necessitatibus! Placeat rem temporibus itaque.</p>
             <p class="paragrafo2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, repudiandae odio optio quasi voluptatem at quia voluptas animi delectus placeat nulla adipisci vitae nihil rerum, consequuntur rem harum quidem quod?</p>
         </article>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./img/cursos.png" class="card-img-top" alt="Cursos">
+                        <div class="card-body">
+                            <h5 class="card-title">Cursos</h5>
+                            <p class="card-text"></p>
+                            <a href="courses.html" class="btn custom-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./img/cursos.png" class="card-img-top" alt="Professores">
+                        <div class="card-body">
+                            <h5 class="card-title">Docentes</h5>
+                            <p class="card-text"></p>
+                            <a href="professors.html" class="btn custom-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <h2>Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn custom-btn">Enviar</button>
+            </form>
+        </div>
     </main>
 
-    <footer>
+    <h1 class="h1faq">Perguntas frequentes (FAQ)</h1>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>Qual o valor dos cursos?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed vitae voluptatem id. Fugiat modi reiciendis, ipsa voluptatem similique natus distinctio cum, consectetur libero, est ea quam. Odit, numquam? Enim?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Qual a carga horária dos cursos?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae perferendis, quae quod odio totam expedita, laborum ut, sed quam ratione esse atque asperiores debitis consequuntur quis quidem ab accusamus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Como aplicar para a UNES?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa ad nobis adipisci, pariatur non error ex qui harum natus at ipsa dolorem esse nemo a praesentium amet vel id.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="text-uppercase"><b>Navegação</b></h5>
+                    <ul class="list-unstyled">
+                        <a href="index.html" class="text-dark">Home</a> |
+                        <a href="about.html" class="text-dark">Sobre</a> |
+                        <a href="contact.html" class="text-dark">Contato</a> |
+                        <a href="courses.html" class="text-dark">Cursos</a>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="text-uppercase"><b>Fale Conosco</b>  </h5>
+                    <p><i class="bi bi-envelope-fill"></i> Email: contato@unes.edu.br</p>
+                    <p><i class="bi bi-telephone-fill"></i> Telefone: (11) 1234-5678</p>
+                </div>
+            </div>
+        </div>
         <h4><b>Todos os direitos reservados</b></h4>
     </footer>
-
+    
     <script>
-        
         window.addEventListener('load', function () {
             var toastEl = document.getElementById('myToast');
             var toast = new bootstrap.Toast(toastEl);
             toast.show();
+        });
+
+        window.addEventListener('beforeunload', function (event) {
+            event.preventDefault();
+            event.returnValue = '';
         });
     </script>
 </body>
