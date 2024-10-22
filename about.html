@@ -12,16 +12,27 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body2">
-    <header>
-        <a href="index.html">
-            <img src="img/logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="logo" style="height: 40px;">
         </a>
-        <nav class="navigation">
-            <a href="index.html" class="btn custom-btn">Home</a>
-            <a href="about.html" class="btn custom-btn">Sobre</a>
-            <a href="contact.html" class="btn custom-btn">Contato</a>
-        </nav>
-    </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     
     <main class="container mt-4">
         <article>
@@ -150,7 +161,6 @@
         <h4><b>Todos os direitos reservados</b></h4>
     </footer>
 
-    <!-- Toast Notification -->
     <div class="toast-container position-fixed top-0 end-0 p-3">
         <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
