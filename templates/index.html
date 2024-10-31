@@ -8,12 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body class="bodyhome">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo" style="height: 40px;">
+        <a class="navbar-brand" href="/templates/index.html">
+            <img src="../static/img/logo.png" alt="logo" style="height: 40px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="{{url_for('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">Sobre</a>
+                    <a class="nav-link" href="{{url_for('about')}}">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contato</a>
+                    <a class="nav-link" href="{{url_for('contact')}}">Contato</a>
                 </li>
             </ul>
         </div>
@@ -48,13 +48,13 @@
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/capa.png" class="d-block w-100" alt="Capa da Universidade">
+                <img src="../static/img/capa.png" class="d-block w-100" alt="Capa da Universidade">
             </div>
             <div class="carousel-item">
-                <img src="./img/studants.jpg" class="d-block w-100" alt="Estudantes">
+                <img src="../static/img/studants.jpg" class="d-block w-100" alt="Estudantes">
             </div>
             <div class="carousel-item">
-                <img src="./img/unesp-ourinhos-foto-7.jpg" class="d-block w-100" alt="UNESP Ourinhos">
+                <img src="../static/img/unesp-ourinhos-foto-7.jpg" class="d-block w-100" alt="UNESP Ourinhos">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -70,7 +70,7 @@
     <div class="jumbotron text-center mt-4">
         <h1 class="display-4">Bem-vindo à UNES!</h1>
         <p class="lead">Transforme seu futuro com uma educação de qualidade.</p>
-        <a class="btn custom-btn btn-lg" href="contact.html" role="button">Inscreva-se agora</a>
+        <a class="btn custom-btn btn-lg" href="/templates/contact.html" role="button">Inscreva-se agora</a>
     </div>
 
     <main class="capa">
@@ -84,21 +84,21 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="./img/cursos.png" class="card-img-top" alt="Cursos">
+                        <img src="../static/img/cursos.png" class="card-img-top" alt="Cursos">
                         <div class="card-body">
                             <h5 class="card-title">Cursos</h5>
                             <p class="card-text"></p>
-                            <a href="courses.html" class="btn custom-btn">Saiba mais</a>
+                            <a href="../templates/about.html" class="btn custom-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="./img/cursos.png" class="card-img-top" alt="Professores">
+                        <img src="../static/img/cursos.png" class="card-img-top" alt="Professores">
                         <div class="card-body">
                             <h5 class="card-title">Docentes</h5>
                             <p class="card-text"></p>
-                            <a href="professors.html" class="btn custom-btn">Saiba mais</a>
+                            <a href="../templates/about.html" class="btn custom-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
