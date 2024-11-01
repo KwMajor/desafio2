@@ -12,7 +12,7 @@
 </head>
 <body class="bodyhome">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/templates/index.html">
+        <a class="navbar-brand" href="{{url_for('home')}}">
             <img src="../static/img/logo.png" alt="logo" style="height: 40px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
     <div class="jumbotron text-center mt-4">
         <h1 class="display-4">Bem-vindo à UNES!</h1>
         <p class="lead">Transforme seu futuro com uma educação de qualidade.</p>
-        <a class="btn custom-btn btn-lg" href="/templates/contact.html" role="button">Inscreva-se agora</a>
+        <a class="btn custom-btn btn-lg" href="{{url_for('contact')}}" role="button">Inscreva-se agora</a>
     </div>
 
     <main class="capa">
@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cursos</h5>
                             <p class="card-text"></p>
-                            <a href="../templates/about.html" class="btn custom-btn">Saiba mais</a>
+                            <a href="{{url_for('about')}}" class="btn custom-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Docentes</h5>
                             <p class="card-text"></p>
-                            <a href="../templates/about.html" class="btn custom-btn">Saiba mais</a>
+                            <a href="{{url_for('contact')}}" class="btn custom-btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -172,10 +172,9 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <h5 class="text-uppercase"><b>Navegação</b></h5>
                     <ul class="list-unstyled">
-                        <a href="index.html" class="text-dark">Home</a> |
-                        <a href="about.html" class="text-dark">Sobre</a> |
-                        <a href="contact.html" class="text-dark">Contato</a> |
-                        <a href="courses.html" class="text-dark">Cursos</a>
+                        <a href="{{url_for('home')}}" class="text-dark">Home</a> |
+                        <a href="{{url_for('about')}}" class="text-dark">Sobre</a> |
+                        <a href="{{url_for('contact')}}" class="text-dark">Contato</a>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4">
