@@ -52,20 +52,20 @@
             <h1><b>Entre em contato</b></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <hr>
-            <form>
+            <form action="./addCC" method="post">
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="email"><b>Seu e-mail:</b></label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="subject"><b>Assunto:</b></label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>
+                        <label for="assunto"><b>Assunto:</b></label>
+                        <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
                     </div>
                 </div>
                 <div class="form-group mt-3">
-                    <label for="description"><b>Descrição:</b></label>
-                    <textarea class="form-control" id="description" name="description" rows="4" placeholder="Descrição" required></textarea>
+                    <label for="mensagem"><b>Descrição:</b></label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Descrição" required></textarea>
                 </div>
                 <button type="submit" class="btn custom-btn mt-3">Enviar</button>
             </form>
@@ -147,7 +147,7 @@
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         window.addEventListener('load', function () {
             var toastEl = document.getElementById('myToast');
             var toast = new bootstrap.Toast(toastEl);
@@ -158,7 +158,7 @@
             event.preventDefault();
             event.returnValue = '';
         });
-    </script>
+    </script> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
