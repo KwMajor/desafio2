@@ -29,8 +29,9 @@ def contact():
 
 @app.route("/contacts")
 def listar_contatos():
+    # Busca todos os registros da tabela contato
     contatos = Contato.query.all()
-    return render_template("contacts.html", contatos = contatos)
+    return render_template("contacts.html", contatos=contatos)
 
 @app.route("/addCC", methods=["POST"])
 def add():
